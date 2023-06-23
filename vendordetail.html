@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Dashboard</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="assets/css/bootstrap.v5.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/form-outline.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Header start-->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <img src="assets/images/Cylsys logo.png" alt="" width="100%">
+        <i class="toggle-sidebar-btn pe-2">
+          <div class="menu-btn-1" id="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </i>
+      </div>
+      
+  
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <p class="phead">Anamika Roy</p>
+          <a href="profile.html"> <img style="width: 45px; border-radius: 100px; margin: 10px;"
+              src="assets/images/admin.jpg" class="proimg" alt="profile_picture"></a>
+          <i class="fa-sharp fa-solid fa-bell bell"></i>
+          <li class="nav-item dropdown pe-4 list-inline"><a class="nav-link dropdown-toggle text-black small"
+              href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
+                class="userclr"> User </span></a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+              <li><a class="dropdown-item d-flex align-items-center" href="login.html"><i
+                    class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Header end-->
+    <div cy-include-html="assets/includes/left-panel.html"></div>
+   
+    <!--Main start-->
+    <main id="main" class="main">
+        <section class="section">
+        <div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="title">
+                        <h4>Vendor Details</h4>
+                    </div>
+                </div>
+            </div>
+        </div>       
+            <a href="vendor1.html" class="btn btn-dark">Back To List</a>
+            </div> 
+            <div class="row mt-3 cardborder">
+                <div class="col-md-6">
+                  <div class="card card1">
+                    <div class="tab" style="margin-left: 40px;">
+                        <table>
+                          <tr>
+                            <th>Vendor Name:</th>
+                            <td>Adobe</td>
+                          </tr>
+                          <tr>
+                            <th>Vendor Email:</th>
+                            <td>adobe@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <th>Phone:</th>
+                            <td>N/A</td>
+                          </tr>
+                          <tr>
+                            <th>Contact Person:</th>
+                            <td>N/A</td>
+                          </tr>
+                          <tr>
+                            <th>Country</th>
+                            <td>India</td>
+                          </tr>
+                        </table>
+                      </div>
+                  </div>
+                </div>
+               
+                <div class="col-md-6">
+                    <div class="tab" style="margin-left: 40px;">
+                        <table>
+                          <tr>
+                            <th>State</th>
+                            <td>Haryana</td>
+                          </tr>
+                          <tr>
+                            <th>City</th>
+                            <td>Gurugram</td>
+                          </tr>
+                          <tr>
+                            <th>Zip Code</th>
+                            <td>N/A</td>
+                          </tr>
+                          <tr>
+                            <th>Address:</th>
+                            <td>N/A</td>
+                          </tr>
+                          <tr>
+                            <th>Description</th>
+                            <td>N/A</td>
+                          </tr>
+                        </table>
+                      </div>
+                </div>
+              </div>
+              <div class="row mt-3 cardborder">              
+                    <h4>History</h4>
+                    <table>
+                        <tr class="back1">
+                            <th>S.No</th>
+                            <th>Detail</th>
+                            <th>OPRATION PERFORMED ON</th>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>Adove inserted by vineet verdhan on 18 april,2018</td>
+                            <td>2018-04-18 06:50:11</td>
+                          </tr>
+                    </table>
+                               
+                </div>
+        </section>
+    </main>
+    <!--Main end-->
+    <!--artical end-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+ <script src="assets/js/bootstrap.bundle.min.js"></script>
+ <script src="assets/js/main.js"></script>
+ <script src="assets/js/cy.js"></script>
+ <script src="assets/js/newscript.js"></script>
+ <script>  var hamburger = document.querySelector(".hamburger");
+   hamburger.addEventListener("click", function () {
+     document.querySelector("body").classList.toggle("active");
+   })</script>
+
+
+</body>
+
+</html>

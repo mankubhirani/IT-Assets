@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<title>Dashboard</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link href="assets/css/bootstrap.v5.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="assets/css/form-outline.css" rel="stylesheet">
+	<link href="assets/css/responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<style>
+
+</style>
+
+
+<body>
+	<!--Header start-->
+
+	<header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between">
+			<img src="assets/images/Cylsys logo.png" alt="" width="100%">
+			<i class="toggle-sidebar-btn pe-2">
+				<div class="menu-btn-1" id="menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</i>
+		</div>
+		<!-- <div>
+			<p class="phead">Anamika Roy</p>
+			<a href="profile.html"> <img style="width: 45px; border-radius: 100px; "
+					src="assets/images/admin.jpg" class="proimg" alt="profile_picture"></a>
+			<i class="fa-sharp fa-solid fa-bell bell"></i>
+		</div> -->
+
+		<!-- <p class="phead">Anamika Roy</p>
+		<a href="profile.html"> <img style="width: 45px; border-radius: 100px; margin: 10px;"
+				src="assets/images/admin.jpg" class="proimg" alt="profile_picture"></a>
+		<i class="fa-sharp fa-solid fa-bell bell"></i> -->
+
+
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<p class="phead">Anamika Roy</p>
+				<a href="profile.html"> <img style="width: 45px; border-radius: 100px; margin: 10px;"
+						src="assets/images/admin.jpg" class="proimg" alt="profile_picture"></a>
+				<i class="fa-sharp fa-solid fa-bell bell"></i>
+				<li class="nav-item dropdown pe-4 list-inline"><a class="nav-link dropdown-toggle text-black small"
+						href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
+							class="userclr"> User </span></a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li><a class="dropdown-item d-flex align-items-center" href="login.html"><i
+									class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div cy-include-html="assets/includes/left-panel.html"></div>
+	<main id="main" class="main">
+		<section class="section">
+			<div>
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="title">
+							<h4>Dashboard</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<!-- <div class="row">
+					<div class="col-md-12" style="background-color: yellow;height: 4rem; border-radius: 10px;">
+						<center>
+							<p>Your default Location is not updated<b><a href="profile.html" style="color: blue;"> Click
+										here</a></b> to choose your default Location. <br>
+								<b>Note </b>:- You can add & set default Location from Admin > Locations section as
+								well.
+							</p>
+						</center>
+					</div>
+				</div>
+				<div class="row" style="margin: 30px 40px 0 -20px;">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="card text-center"
+									style="width: 14rem;background-color: rgb(185 104 240); border-radius: 10px;">
+									<div class="card-body">
+										<h4 class="card-title text-light">Assets</h4>
+										<p class="card-text">00</p>
+										<a href="#" class="btn btn-primary divcolor">View All</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card text-center"
+									style="width: 14rem;background-color:#74A8DA; border-radius: 10px">
+									<div class="card-body">
+										<h4 class="card-title text-light">Assigned Assets</h4>
+										<p class="card-text">00</p>
+										<a href="#" class="btn btn-primary divcolor">View All</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card text-center"
+									style="width: 14rem;background-color: #dc52c6cf ;border-radius: 10px">
+									<div class="card-body">
+										<h4 class="card-title text-light" style="font-size: 21px;">Unassigned Assets
+										</h4>
+										<p class="card-text">00</p>
+										<a href="#" class="btn btn-primary divcolor">View All</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card text-center"
+									style="width: 14rem;background-color:rgb(143 132 231) ;border-radius: 10px">
+									<div class="card-body">
+										<h4 class="card-title text-light">Vendors</h4>
+										<p class="card-text">00</p>
+										<a href="#" class="btn btn-primary divcolor">View All</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" style=" margin: 30px 40px 0 -20px;">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="card text-center c1"
+									style="width: 14rem;background-color:  rgb(185 104 240); border-radius: 10px">
+									<div class="card-body">
+										<h4 class="card-title text-light">Locations</h4>
+										<p class="card-text">00</p>
+										<a href="#" class="btn btn-primary divcolor">View All</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card text-center c2"
+									style="width: 14rem;background-color: #74A8DA; border-radius: 10px">
+									<div class="card-body">
+										<h4 class="card-title text-light">Products</h4>
+										<p class="card-text">00</p>
+										<a href="#" class="btn btn-primary divcolor">View All</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card text-center c3"
+									style="width: 14em;background-color:  #dc52c6cf; border-radius: 10px">
+									<div class="card-body">
+										<h4 class="card-title text-light">Employees</h4>
+										<p class="card-text">00</p>
+										<a href="#" class="btn btn-primary divcolor">View All</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card text-center "
+									style="width: 14rem;background-color:rgb(143 132 231); border-radius: 10px">
+									<div class="card-body">
+										<h4 class="card-title text-light">Total Asset cost</h4>
+										<p class="card-text">00</p>
+										<a href="#" class="btn btn-primary divcolor">View All</a>
+									</div>
+								</div>
+							</div> -->
+				<div class="row">
+					<div class="col-md-12" style="background-color:#D9D9D9; border-radius: 10px;">
+						<center>
+							<p>Your default Location is not updated<b><a href="profile.html" style="color: blue;"> Click
+										here</a></b> to choose your default Location. <br>
+								<b>Note </b>:- You can add & set default Location from Admin > Locations section as
+								well.
+							</p>
+						</center>
+					</div>
+				</div>
+				<!-- <div class="row" style="margin: 30px 40px 0 -20px;">
+					<div class="col-md-12"> -->
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="card text-center"
+							style="margin: 20px 0px;height: 150px; background-color:#3B76EE; border-radius: 10px;">
+							<div class="card-body">
+								<h4 class="card-title text-light">Total Asset Cost</h4>
+								<Center>
+									<h4 class="card-title text-light">12,22,125</h4>
+								</Center>
+								<img src="assets/images/div1.png" alt="" class="divimg">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="card text-center"
+							style="margin: 20px 0px;height: 150px; background-color:#62C7FF; border-radius: 10px">
+							<div class="card-body">
+								<h4 class="card-title text-light">Total Assets</h4>
+								<Center>
+									<h4 class="card-title text-light">334</h4>
+								</Center>
+								<img src="assets/images/div2.png" alt="" class="divimg">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="card text-center"
+							style="margin: 20px 0px;height: 150px; background-color:#A66DD4 ;border-radius: 10px">
+							<div class="card-body">
+								<h4 class="card-title text-light">Total Vendors
+								</h4>
+								<Center>
+									<h4 class="card-title text-light">150</h4>
+								</Center>
+								<img src="assets/images/div3.png" alt="" class="divimg">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="card text-center"
+							style="margin: 20px 0px;height: 150px; background-color:#5B40C5 ;border-radius: 10px">
+							<div class="card-body">
+								<h4 class="card-title text-light">Total Employee</h4>
+								<Center>
+									<h4 class="card-title text-light">120</h4>
+								</Center>
+								<img src="assets/images/div4.png" alt="" class="divimg">
+							</div>
+						</div>
+					</div>
+					<!-- </div>
+					</div> -->
+				</div>
+				<br><br>
+				<div>
+					<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+				</div><br>
+				<a href="#" class="btn btn-primary divclr"><span class="btnn"> UNASSIGN ASSETS</span></a>
+				<button a href="#" class="btn btn-dark" style="background-color:#A66DD4; border: none"><span class="btnn">ASSIGN
+						ASSETS</span></a></button>
+				<br><br>
+				<div class="row">
+					<div class="col-md-6">
+						<h4>Latest Assets Purchase</h4>
+					</div>
+					<div class="col-md-6"><a href="#" class="btn btn-primary divclr"
+							style="float:right; background-color:#386996;"><span class="btnn"> New Purchase +
+							</span></a></div>
+				</div>
+				<div class="row mt-3 cardborder">
+					<table>
+						<tr>
+							<th>Product name</th>
+							<th>Brand</th>
+							<th>Product category</th>
+							<th>Purchase Price</th>
+							<th>Purchase Date</th>
+							<th>Purchase Method</th>
+						</tr>
+						<tr>
+							<td>iphone 7 plus</td>
+							<td>Apple</td>
+							<td>Mobile phones</td>
+							<td>$700</td>
+							<td>Jan 20 ,2020</td>
+							<td>Credit Card</td>
+						</tr>
+						<tr>
+							<td>Laptop inspiron 15</td>
+							<td>Dell</td>
+							<td>laptops</td>
+							<td>$3,500</td>
+							<td>Dec 13,2019</td>
+							<td>debit Card</td>
+						</tr>
+						<tr>
+							<td>Play station 5</td>
+							<td>Sony</td>
+							<td>Gaming</td>
+							<td>$4,860</td>
+							<td>Oct 8,2020</td>
+							<td>Master Card</td>
+						</tr>
+						<tr>
+							<td>iphone 7 plus</td>
+							<td>Apple</td>
+							<td>Mobile phones</td>
+							<td>$700</td>
+							<td>Jan 20 ,2020</td>
+							<td>Creadit Card</td>
+						</tr>
+						<tr>
+							<td>iphone 7 plus</td>
+							<td>Apple</td>
+							<td>Mobile phones</td>
+							<td>$700</td>
+							<td>Jan 20 ,2020</td>
+							<td>Creadit Card</td>
+						</tr>
+					</table>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<h4>Latest Subscriptions</h4>
+					</div>
+					<div class="col-md-6"><a href="#" class="btn btn-primary divclr"
+							style="float:right; background-color: #386996;"><span class="btnn">New Subscription
+								+</span></a></div>
+				</div>
+				<div class="row mt-3 cardborder">
+					<table>
+						<tr>
+							<th>Software Name</th>
+							<th>Plan</th>
+							<th>Billing Period</th>
+							<th>Amount</th>
+							<th>First Payment</th>
+							<th>Payment Method</th>
+						</tr>
+						<tr>
+							<td>Zoho</td>
+							<td>Primium</td>
+							<td>After 01 Month</td>
+							<td>$700</td>
+							<td>Jan 20 ,2020</td>
+							<td>Credit Card</td>
+						</tr>
+						<tr>
+							<td>Amozon</td>
+							<td>Basic</td>
+							<td>After 01 Month</td>
+							<td>$3,500</td>
+							<td>Dec 13,2019</td>
+							<td>debit Card</td>
+						</tr>
+						<tr>
+							<td>Amazon prime</td>
+							<td>Standard</td>
+							<td>After 03 Months</td>
+							<td>$4,860</td>
+							<td>Oct 8,2020</td>
+							<td>Master Card</td>
+						</tr>
+						<tr>
+							<td>Amazon Prime</td>
+							<td>Basic</td>
+							<td>After 02 weeks</td>
+							<td>$700</td>
+							<td>Jan 20 ,2020</td>
+							<td>Creadit Card</td>
+						</tr>
+						<tr>
+							<td>Netflex</td>
+							<td>Premium</td>
+							<td>After 01 year</td>
+							<td>$700</td>
+							<td>Jan 20 ,2020</td>
+							<td>Creadit Card</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<!--Table code end-->
+		</section>
+	</main>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/cy.js"></script>
+	<script src="assets/js/newscript.js"></script>
+	<script>  var hamburger = document.querySelector(".hamburger");
+		hamburger.addEventListener("click", function () {
+			document.querySelector("body").classList.toggle("active");
+		})</script>
+
+
+</body>
+
+</html>

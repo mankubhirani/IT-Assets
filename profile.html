@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <title>Dashboard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/css/bootstrap.v5.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/form-outline.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!--Header start-->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between">
+			<img src="assets/images/Cylsys logo.png" alt="" width="100%">
+			<i class="toggle-sidebar-btn pe-2">
+				<div class="menu-btn-1" id="menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</i>
+		</div>
+		
+
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<p class="phead">Anamika Roy</p>
+				<a href="profile.html"> <img style="width: 45px; border-radius: 100px; margin: 10px;"
+						src="assets/images/admin.jpg" class="proimg" alt="profile_picture"></a>
+				<i class="fa-sharp fa-solid fa-bell bell"></i>
+				<li class="nav-item dropdown pe-4 list-inline"><a class="nav-link dropdown-toggle text-black small"
+						href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
+							class="userclr"> User </span></a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li><a class="dropdown-item d-flex align-items-center" href="login.html"><i
+									class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+  <!--Header end-->
+  <div cy-include-html="assets/includes/left-panel.html"></div>
+  <!--Main start-->
+  <main id="main" class="main">
+    <section class="section">
+      <h4><b> Profile</b></h4>
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/images/admin.jpg" alt="#" style="width: 100%;">
+              <div style="background-color: #a1a1a1;text-align: end;padding: 0px 15px;"><i
+                  class="fa-solid fa-trash-can"></i></div>
+              <h5 style="margin-top: 15px;">Contact</h5>
+              <ul class="contectIcon">
+                <li> <i class="fa-solid fa-phone mr-3 icon"></i>+91 9811911765</i></a></li>
+                <li><i class="fa fa-envelope icon"></i>vineet_vardhan@sislinfotech.com</a></li>
+                <li><i class="fa-solid fa-user-plus icon"></i><a href="#"><b> Refer A Friend</b></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h5 class="cen"><b>BASIC INFORMATION</b></h5>
+          <hr>
+          <div class="first">
+            <div class="summarydata">
+              <h6><i class="fa-solid fa-chart-simple icon"></i><b> Summary</b></h6>
+              <i class="fa-solid fa-pen penIcon"></i>
+            </div>
+            <p>N/A</p>
+          </div>
+          <div class="second">
+            <div class="summarydata">
+              <h6><i class="fa-solid fa-location-dot icon"></i><b>My Location</b></h6>
+              <i class="fa-solid fa-pen penIcon"></i>
+            </div>
+            <p>My Location</p>
+            <div class="locationclass">
+              <div>
+                <select class="form-select">
+                  <option value="">---Please Add Some Location---</option>
+                  <option>Mumbai</option>
+                  <option>Madhaya Pradesh</option>
+                  <option>Noida</option>
+                </select><br>
+                <a class="button" href="#">Save</a>
+                <button a href="#" class="btn btn-dark">Cancel</a></button>
+              </div>
+              <div>
+                <a class="button" href="/profilelocation.html">ADD LOCATION</a>
+              </div>
+            </div>
+          </div>
+          <div class="third">
+            <div class="summarydata">
+              <h6><i class="fa-solid fa-user icon"></i><b>Basic information</b></h6>
+              <i class="fa-solid fa-pen penIcon"></i>
+            </div>
+          </div>
+          <div class="tab" style="margin-left: 40px;">
+            <table>
+              <tr>
+                <th>full Name</th>
+                <td>Vineet Vardhan</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td>vineet_vardhan@sislinfotech.com</td>
+              </tr>
+              <tr>
+                <th>Contact No.</th>
+                <td>981191765</td>
+              </tr>
+              <tr>
+                <th>Designation</th>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <th>Responsibilities</th>
+                <td>Admin have eccess to - Assign IT Manager/IT Executives Add Locations</td>
+              </tr>
+            </table>
+          </div>
+          <div class="third">
+            <div class="summarydata">
+              <h6><i class="fa-solid fa-phone mr-3 icon"></i><b>Company information</b></h6>
+              <i class="fa-solid fa-pen penIcon"></i>
+            </div>
+          </div>
+          <div class="tab" style="margin-left: 40px;">
+            <table>
+              <tr>
+                <th>Company Name</th>
+                <td>Vineet Vision</td>
+              </tr>
+              <tr>
+                <th>Company Address</th>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <th>contact Person Name</th>
+                <td>981191765</td>
+              </tr>
+              <tr>
+                <th>Contact Person Email</th>
+                <td>vineet_vardhan@sislinfotech.com</td>
+              </tr>
+              <tr>
+                <th>Contact Person Mobile</th>
+                <td>Admin have eccess to - Assign IT Manager/IT Executives Add Locations</td>
+              </tr>
+            </table>
+          </div>
+          <div class="third">
+            <div class="summarydata">
+              <h6><i class="fa fa-share-alt icon"></i><b>Social Media Information</b></h6>
+              <i class="fa-solid fa-pen penIcon"></i>
+            </div>
+          </div>
+          <div class="tab" style="margin-left: 40px;">
+            <table>
+              <tr>
+                <th>Facebook</th>
+                <td>Vineet Vision</td>
+              </tr>
+              <tr>
+                <th>Twiter</th>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <th>Linkdin</th>
+                <td>981191765</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--Main end-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cy.js"></script>
+  <script src="assets/js/newscript.js"></script>
+  <script>  var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function () {
+      document.querySelector("body").classList.toggle("active");
+    })</script>
+
+
+</body>
+
+</html>

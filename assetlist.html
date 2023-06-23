@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Dashboard</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="assets/css/bootstrap.v5.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/form-outline.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Header start-->
+
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+            <img src="assets/images/Cylsys logo.png" alt="" width="100%">
+            <i class="toggle-sidebar-btn pe-2">
+                <div class="menu-btn-1" id="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </i>
+        </div>
+
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+                <p class="phead">Anamika Roy</p>
+                <a href="profile.html"> <img style="width: 45px; border-radius: 100px; margin: 10px;"
+                        src="assets/images/admin.jpg" class="proimg" alt="profile_picture"></a>
+                <i class="fa-sharp fa-solid fa-bell bell"></i>
+                <li class="nav-item dropdown pe-4 list-inline"><a class="nav-link dropdown-toggle text-black small"
+                        href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
+                            class="userclr"> User </span></a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li><a class="dropdown-item d-flex align-items-center" href="login.html"><i
+                                    class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Header end-->
+    <!--artical start-->
+    <!--Sidebar start-->
+    <!--left panel start-->
+    <div cy-include-html="assets/includes/left-panel.html"></div>
+    <!--left panel end-->
+    <!--Sidebar end-->
+    <!--Main start-->
+
+
+    <main id="main" class="main">
+        <div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="title">
+                        <h4>Asset List</h4>
+                    </div>
+
+                </div>
+                <div class="col-sm-12">
+                    <p class="addasset">Assets added successfully</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="section">
+            <!--Table code start-->
+
+
+
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn-vendor"><a href="asset.html" class="btn btn-primary"
+                            style="background-color:#386996; width: 160px;">Add Asset</a></button>
+                    <button class="btn-vendor"><a href="#" class="btn btn-dark"
+                            style=" width: 160px; background-color:#A66DD4;border: none">Export</a></button>
+                    <button class="btn-vendor"><a href="#" class="btn btn-primary"
+                            style=" width: 160px;">Delete</a></button>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-md-4 col-12" style="float: right;justify-self: end; margin-left: 18rem;">
+                <div class="input-group rounded blue">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <span class="input-group-text border-0 blue" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-12" style="display: flex;">
+                    <span class="entry_show">Show</span>
+                    <select name="DataTables_Table_3_length" aria-controls="DataTables_Table_3"
+                        class="custom-select custom-select-sm form-control form-control-sm" style="width: auto;">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="-1">All</option>
+                    </select>
+                    <span class="entry_show">entries</span>
+                </div>
+            </div>
+            <div class="row row1">
+                <div class="col-sm-12">
+                    <table class="checkbox-datatable table nowrap dataTable no-footer dtr-inline"
+                        id="DataTables_Table_3" role="grid" aria-describedby="DataTables_Table_3_info">
+                        <thead>
+                            <tr role="row" class="lightblue">
+                                <th class="dt-body-center sorting_disabled" rowspan="1" colspan="1" aria-label="">
+                                    <div class="dt-checkbox">
+                                        <input type="checkbox" name="select_all" value="1" id="example-select-all">
+                                        <span class="dt-checkbox-label"></span>
+                                    </div>
+                                </th>
+                                <th class="sorting_desc " tabindex="0" aria-controls="DataTables_Table_3" rowspan="1"
+                                    colspan="1" aria-label="Name: activate to sort column ascending"
+                                    aria-sort="descending">S.No</th>
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1"
+                                    colspan="1" aria-label="Position: activate to sort column ascending">
+                                    Asset Name</th>
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1"
+                                    colspan="1" aria-label="Office: activate to sort column ascending">Serial Number
+
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1"
+                                    colspan="1" aria-label="Start date: activate to sort column ascending">
+                                    Products type
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1"
+                                    colspan="1" aria-label="Start date: activate to sort column ascending">
+                                    Product
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1"
+                                    colspan="1" aria-label="Start date: activate to sort column ascending">
+                                    Vendor
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1"
+                                colspan="1" aria-label="Start date: activate to sort column ascending">
+                                Current State
+                            </th>
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1"
+                                    colspan="1" aria-label="Salary: activate to sort column ascending">Assign
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1"
+                                    colspan="1" aria-label="Salary: activate to sort column ascending">Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr role="row" class="odd">
+                                <td class=" dt-body-center" tabindex="0">
+                                    <div class="dt-checkbox"><input type="checkbox" name="id[]" value=""><span
+                                            class="dt-checkbox-label"></span></div>
+                                </td>
+                                <td class="sorting_1">1</td>
+                                <td class="">iphoneX</td>
+                                <td>ABV99BHY</td>
+                                <td>Mobile device</td>
+                                <td>iphone</td>
+                                <td>Apple</td>
+                                <td>In store</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary">Assign</a>
+                                </td>
+                                <td>
+                                    <div style="color: #0d6efd;">
+                                        <a href="/productupdate.html" class="ey1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                            </svg>
+                                        </a>
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                                            <path
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class=" dt-body-center" tabindex="0">
+                                    <div class="dt-checkbox"><input type="checkbox" name="id[]" value=""><span
+                                            class="dt-checkbox-label"></span></div>
+                                </td>
+                                <td class="sorting_1">2</td>
+                                <td class="">iphoneX</td>
+                                <td>ABV99BHY</td>
+                                <td>Mobile device</td>
+                                <td>iphone</td>
+                                <td>Apple</td>
+                                <td>In store</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary">Assign</a>
+                                </td>
+                                <td>
+                                    <div style="color: #0d6efd;">
+                                        <a href="/productupdate.html" class="ey1">
+
+
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                            </svg>
+                                        </a>
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                                            <path
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr role="row" class="odd">
+                                <td class=" dt-body-center" tabindex="0">
+                                    <div class="dt-checkbox"><input type="checkbox" name="id[]" value=""><span
+                                            class="dt-checkbox-label"></span></div>
+                                </td>
+                                <td class="sorting_1">3</td>
+                                <td class="">iphoneX</td>
+                                <td>ABV99BHY</td>
+                                <td>Mobile device</td>
+                                <td>iphone</td>
+                                <td>Apple</td>
+                                <td>In store</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary">Assign</a>
+                                </td>
+                                <td>
+                                    <div style="color: #0d6efd;">
+                                        <a href="/productupdate.html" class="ey1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                            </svg>
+                                        </a>
+                                        &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
+                                            <path
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
+                                        </svg>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+
+
+            
+                <div id="DataTables_Table_3_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                    <div class="col-sm-12 col-md-7 ">
+                        <nav aria-label="Page navigation example" style="float: right;">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-12 col-md-5">
+                            <div class="dataTables_info" id="DataTables_Table_3_info" role="status" aria-live="polite">
+                                Showing 1 to 1 of 2 entries</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+         
+
+            
+
+            <!--Table code end-->
+        </section>
+
+
+    </main>
+    <!--Main end-->
+    <!--artical end-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cy.js"></script>
+    <script src="assets/js/newscript.js"></script>
+    <script>  var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function () {
+            document.querySelector("body").classList.toggle("active");
+        })</script>
+</body>
+
+</html>

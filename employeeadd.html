@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <title>Dashboard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/css/bootstrap.v5.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/form-outline.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!--Header start-->
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+		<div class="d-flex align-items-center justify-content-between">
+			<img src="assets/images/Cylsys logo.png" alt="" width="100%">
+			<i class="toggle-sidebar-btn pe-2">
+				<div class="menu-btn-1" id="menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</i>
+		</div>
+		
+
+		<nav class="header-nav ms-auto">
+			<ul class="d-flex align-items-center">
+				<p class="phead">Anamika Roy</p>
+				<a href="profile.html"> <img style="width: 45px; border-radius: 100px; margin: 10px;"
+						src="assets/images/admin.jpg" class="proimg" alt="profile_picture"></a>
+				<i class="fa-sharp fa-solid fa-bell bell"></i>
+				<li class="nav-item dropdown pe-4 list-inline"><a class="nav-link dropdown-toggle text-black small"
+						href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
+							class="userclr"> User </span></a>
+					<ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+						<li><a class="dropdown-item d-flex align-items-center" href="login.html"><i
+									class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+  <!--Header end-->
+  <!--artical start-->
+  <!--Sidebar start-->
+  <!--left panel start-->
+  <div cy-include-html="assets/includes/left-panel.html"></div>
+  <!--left panel end-->
+  <!--Sidebar end-->
+  <!--Main start-->
+  <!--left panel end-->
+  <!--Sidebar end-->
+  <!--Main start-->
+  <main id="main" class="main">
+    <section class="section">
+    <div>
+              <div class="popup">
+                <header class="wid">
+                  <p class="addhead">Add Employee</p>
+                </header>
+                
+                <div id="data">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="#">Name</label><br>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="#">Email</label><br>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="#">Employee ID</label><br>
+                        <input type="text" class="form-control">
+                      </div>
+                     
+                    <div class="col-md-6">
+                      <label for="#">Phone</label><br>
+                      <input type="text" class="form-control">
+                    </div>
+                   
+                    
+                    
+                    <div class="col-md-6">
+                      <label for="#">Locations</label>
+                      <select class="form-control">
+                        <option value="">--Choose your location--</option>
+                        <option>Techjockey gurugram</option>
+                        <option>Techjockey HQ-New-Delhi </option>                     
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="#">Reporting Manager</label>
+                        <select class="form-control">
+                          <option value="">--Choose Select Reporting Manager--</option>
+                          <option>Pawas Goyal</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="#">Department</label>
+                        <select class="form-control">
+                          <option value="">--Choose Department--</option>
+                          <option>Adminstration</option>
+                          <option>Engineering</option>
+                          <option>Finance</option>
+                          <option>IT services</option>
+                          <option>Sales</option>
+                        </select>
+                      </div>
+                   
+                  </div>
+                  <button a href="#" class="btn btn-dark">Close</a></button>
+                  <a class="button" href="/employee.html">Save</a>
+                </div>
+              </div>
+            </div><br>
+        </section>
+  </main>
+  <!--Main end-->
+  <!--artical end-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/cy.js"></script>
+  <script src="assets/js/newscript.js"></script>
+  <script>  var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function () {
+      document.querySelector("body").classList.toggle("active");
+    })</script>
+
+
+</body>
+
+</html>
